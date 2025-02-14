@@ -11,15 +11,15 @@ export default function DashboardPage() {
         // console.log(sourceCode);
         console.log("clicked")
 
-        const token = await CreateSubmissionToken("print(2+3)", "5");
-
-
-        console.log(token);
-
-
-        // const data = await GetSubmission(token);
+        // const token = await CreateSubmissionToken("print(2+3)", "5");
         //
-        // console.log(data);
+        //
+        // console.log(token);
+
+
+        const data = await GetSubmission("1dfa9f08-bcb1-4c18-82a9-992e24eb04c3");
+
+        console.log(data);
     }
 
     return (
